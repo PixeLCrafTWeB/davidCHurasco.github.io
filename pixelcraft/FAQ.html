@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sobre Pixelcraft">
+    <title>Sobre Nosotros - Pixelcraft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estyle.css">
+    <link rel="stylesheet" href="http://127.0.0.1:5500/estyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header class="main-header">
+        <div class="menu__bar">
+            <h1 class="logo2"><img src="imagenesweb/logo.png" alt=""> <span>Pixelcraft</span></h1>
+            
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Nosotros <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown__menu">
+                        <ul>
+                            
+                            <li><a href="FAQ.html">FAQ</a></li>
+                            
+                            <li><a href="Testimonio.html">Testimonios </a></li>
+                            <li><a href="Blog.html">Blog </a></li>
+        
+                        </ul>
+                </li>
+                <li><a href="servicios.html">Servicios  <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown__menu">
+                    <ul>
+                        <li><a href="Mision_vision.html">vision y mision</a></li>
+                        <li><a href="nosotros.html">Nuestro Equipo</a></li>
+                        <li><a href="David.html"> Diseño de Logo </a></li>
+                        <li><a href="3d.html">Diseño de pagina web</a></li>
+                        <li><a href="twicht.html">Diseño Emote Twitch</a></li>
+                    </ul>
+                </div>
+                </li>
+    
+                <li><a href="blog5.html">Precio</a></li>
+                <li><a href="contacto.html">Contactanos</a></li>
+            </ul>
+        </div>
+    
+    </header>
+    
+    <!-- Sección FAQ -->
+    <div id="faq">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-item">
+            <h3>¿Qué es HTML, CSS y JavaScript?</h3>
+            <p>HTML estructura el contenido, CSS lo estiliza y JavaScript añade interactividad a la página web.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>¿Es necesario saber programar para crear una página web?</h3>
+            <p>No siempre, pero aprender HTML, CSS y JavaScript te da más control y flexibilidad.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>¿Qué es el alojamiento web?</h3>
+            <p>El alojamiento web (hosting) es un servicio que permite subir tu página a internet para que otros puedan acceder a ella.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>¿Cómo puedo hacer que mi página sea responsive?</h3>
+            <p>Para hacerla responsive, puedes usar media queries en CSS o frameworks como Bootstrap para adaptar el diseño a distintos dispositivos.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>¿Qué es SEO y por qué es importante?</h3>
+            <p>SEO es la optimización para motores de búsqueda. Mejora la visibilidad de tu página en resultados de búsqueda, lo que atrae más visitantes.</p>
+        </div>
+    </div>
+
+    <style>
+        #faq {
+            width: 80%;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 20px;
+            transition: transform 0.2s ease;
+        }
+
+        .faq-item h3 {
+            cursor: pointer;
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .faq-item p {
+            display: none;
+            margin-top: 10px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .faq-item h3:hover {
+            color: #0056b3;
+        }
+
+        .faq-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .faq-item.active p {
+            display: block;
+        }
+    </style>
+
+    <script>
+        document.querySelectorAll('.faq-item h3').forEach(function(faqQuestion) {
+            faqQuestion.addEventListener('click', function() {
+                const parentItem = this.parentElement;
+                parentItem.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Pixelcraft. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#">Términos de Uso</a>
+                <a href="#">Política de Privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
